@@ -1,0 +1,98 @@
+<!doctype html>
+<html class=" ">
+   <head>
+      <meta http-equiv="Content-Language" content="en-us" />
+      <meta name="google" value="notranslate" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/chat-apple-touch-icon-57x57.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/chat-apple-touch-icon-114x114.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/chat-apple-touch-icon-72x72.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/chat-apple-touch-icon-144x144.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/chat-apple-touch-icon-120x120.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/chat-apple-touch-icon-152x152.png" />
+      <link rel="apple-touch-icon-precomposed" href="/assets/chat-apple-touch-icon-iphone.png" />
+      <meta name="apple-mobile-web-app-title" content="Nomad List">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+      <script>var imgUrClientId='54d591aedeba2d4';	var activeChannel="all_channels";	var activeChannelString="all_channels";	var activeTeam="nomadlist";	var activeTeamLogo="https:\/\/nomadlist.com\/assets\/logo.png";	isLoggedIn=false;	generalChannel='__general';</script><script src="/assets/chat.js"></script>
+      <link rel="stylesheet" href="/assets/chat.css" />
+      <title>Nomad List Chat</title>
+      <script>var allUsers=null;	var allUsersAvatars=null;</script>
+      <style>.loading_screen {	display:block;	width:100vw;	height:100vh;	background:#f8f8fa;	position:fixed;	top:0;	left:0;	z-index:1000;	}	.loading_screen .img {	position:absolute;	background-size:cover;	background-position: center center;	background-repeat:no-repeat;	border-radius:100%;	max-width:300px;	max-height:300px;	top:25vh;	left:50%;	transform:translateX(-50%) translateY(-50%);	width:25vw;	height:25vw;	}	.loading_spinner {	display:none;	z-index:1001;	position:absolute;	top:50%;	left:50%;	height:4em;	width:4em;	}	.loading_spinner.show {	display:block;	}	.loading_spinner_fast { animation-duration: .6s;	}	.loading_spinner_tail { animation: spin 1.2s cubic-bezier(.41,.24,.64,.69) infinite; -webkit-animation: spin 1.2s cubic-bezier(.41,.24,.64,.69) infinite;	}	.loading_spinner_bg { opacity: .2; stroke: grey;	}	.loading_spinner_bg, .loading_spinner_path { stroke-width: 8; fill: none;	}	.loading_spinner_spinner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); animation: spin 1.2s cubic-bezier(.25,.29,.54,.86) infinite; -webkit-animation: spin 1.2s cubic-bezier(.25,.29,.54,.86) infinite;	}	.loading_spinner_path { stroke-dasharray: 55,200; stroke-dashoffset: 90; stroke-linecap: round;	}	.loading_spinner_red { stroke: #ff4742;	}	.loading_spinner_bg, .loading_spinner_path { stroke-width: 8; fill: none;	}	@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}	100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}	}	@-moz-keyframes spin{0%{-moz-transform:rotate(0);transform:rotate(0)}	100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}	}	@-ms-keyframes spin{0%{-ms-transform:rotate(0);transform:rotate(0)}	100%{-ms-transform:rotate(360deg);transform:rotate(360deg)}	}	@keyframes spin{0%{transform:rotate(0)}	100%{transform:rotate(360deg)}	}</style>
+   </head>
+   <body class="theme light lite nomadlist ">
+      <div class="loading_screen">
+         <div class="img" style="background-image:url('https://nomadlist.com/assets/logo.png');"></div>
+      </div>
+      <div class="top-bar">
+         <a class="nav-item action-toggle-mobile-nav"><i class="fa-bars fa"></i></a>
+         <div class="brand">
+            <a class="no-border" href="/"><img src="/assets/jsla_logo.png" class="logo" /></a>
+         </div>
+         <!--<div class="container"><a href="https://join.nomadlist.com" class="nav-item">Join Nomad List</a><a href="https://nomadlist.com/radar" class="nav-item">Nomad Radar</a><a href="https://nomadlist.com/" class="nav-item">Cities</a><a href="https://nomadforum.io" class="nav-item">Forum</a><a href="https://nomadlist.com/chat" class="nav-item">Chat</a><a href="https://nomadlist.com/collections" class="nav-item">Collections</a><a href="https://remoteok.io" class="nav-item">Remote Jobs</a><a href="https://placestowork.co" class="nav-item">Coworking</a><a href="https://colive.co" class="nav-item">Coliving</a><a href="https://nomadlist.com/countries" class="nav-item">Countries</a><a href="https://nomadlist.com/regions" class="nav-item">Regions</a><a href="https://nomadlist.com/blog" class="nav-item">Blog</a><a href="https://nomadlist.com/tv" class="nav-item">Nomad TV</a><a href="https://nomadlist.com/vr" class="nav-item">Virtual Reality</a><a href="http://prepaid-data-sim-card.wikia.com/wiki/Prepaid_SIM_with_data" class="nav-item">SIM card DB</a><a href="http://reddit.com/r/digitalnomad" class="nav-item">Subreddit</a><a href="https://en.wikivoyage.org/" class="nav-item">Wikivoyage</a><a href="https://nomadlist.com/about" class="nav-item">About</a><a href="https://join.nomadlist.com" class="join-nomads button reverse red tooltip top-bar-item" title="Join Nomad List and meet 10,000+ digital nomads in our chat community and forum">Join</a><a href="http://nomadlist.com/login" class="log-in-nomads button red tooltip top-bar-item">Login</a></div>-->
+      </div>
+      <div class="chat">
+         <div class="search-container"><input type="search" class="search_channels" placeholder="Search (or add) channels" name="search" autocomplete="off" /></div>
+         <i class="fa fa-times action-clear-search"></i>
+         <div class="left_list">
+            <ul id="channel_list" class="channel_list"></ul>
+            <ul id="team_list" class=" team_list"></ul>
+            <ul id="private_messages_list" class="private_messages_list">
+               <li class="new isChannel placeholder">
+                  <div class="image lazyload placeholder"></div>
+                  <div class="channel_right placeholder"><span class="channel_string placeholder"></span><span class="lastMessage placeholder" style="width:100%"></span></div>
+               </li>
+               <li class="new isChannel placeholder">
+                  <div class="image lazyload placeholder"></div>
+                  <div class="channel_right placeholder"><span class="channel_string placeholder"></span><span class="lastMessage placeholder" style="width:100%"></span></div>
+               </li>
+               <li class="new isChannel placeholder">
+                  <div class="image lazyload placeholder"></div>
+                  <div class="channel_right placeholder"><span class="channel_string placeholder"></span><span class="lastMessage placeholder" style="width:100%"></span></div>
+               </li>
+            </ul>
+         </div>
+         <div class="chat-box">
+            <div class="notice"></div>
+            <div class="live-container">
+               <div class="live" id="chat-box-live"></div>
+            </div>
+            <div class="user-container">
+               <div class="fa fa-times action-close-user-box"></div>
+               <div class="avatar" style="background-image:url('/assets/img/users/tw1577241403.jpg')"></div>
+               <h2 class="username">@levelsio</h2>
+               <div class="button action-call-user">Call</div>
+               <div class="button action-message-user">Message</div>
+            </div>
+            <div class="autocomplete"><span>levelsio</span><span>grum</span><span>henk</span></div>
+            <form class="upload-file-uploader-form" style="display:none"><input type="hidden" name="authorization" value="Client-ID 54d591aedeba2d4" /><input type="file" accept="image/gif, image/jpeg, image/png" class="upload-file-uploader" /></form>
+            <i class="fa fa-paperclip action-upload-file"></i><i class="fa fa-map-marker action-share-location"></i><input class="text-box" placeholder="Write a message" type="text" name="message" autocomplete="off" data-emojiable="true" data-emoji-input="unicode" /><!-- <div class="text-box">Write a message</div> -->
+         </div>
+      </div>
+      <div class="loading_spinner loading_spinner_medium show">
+         <svg class="loading_spinner_spinner loading_spinner_fast" viewBox="0 0 100 100">
+            <circle class="loading_spinner_bg" cx="50%" cy="50%" r="35"></circle>
+            <circle class="loading_spinner_path loading_spinner_red" cx="50%" cy="50%" r="35"></circle>
+         </svg>
+         <svg class="loading_spinner_spinner loading_spinner_tail loading_spinner_fast" viewBox="0 0 100 100">
+            <circle class="loading_spinner_path loading_spinner_red" cx="50%" cy="50%" r="35"></circle>
+         </svg>
+      </div>
+      <div class="backdrop "></div>
+      <div class="sign-up cta modal " data-cta="sign-up" style="z-index:10000000000">
+         <div class="photo" style="background-image:url('https://nomadlist.com/assets/meetup-20.jpg');"></div>
+         <span class="container">
+            <a target="_new" href="https://nomadlist.com/login?url=http%3A%2F%2Fnomadlist.com%2Fchat" class="button">Log In</a><span class="or">&nbsp;or&nbsp;</span>
+            <a target="_new" href="https://join.nomadlist.com" class="button reverse">
+               Join
+               <div class="mobile"></div>
+            </a>
+            &nbsp;our community of 6,927 travelers and start chatting on <strong>Nomad List</strong> now
+         </span>
+         <span class="cancel button">maybe later</span>
+      </div>
+      <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');	ga('create', 'UA-40780399-6', 'auto');	ga('require', 'linkid', 'linkid.js');	ga('send', 'pageview');	ga('b.send', 'pageview');</script><img class="image-previewer" />
+      <video autoplay="true" class="video-previewer"></video>
+   </body>
+</html>
