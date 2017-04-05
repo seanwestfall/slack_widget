@@ -1,9 +1,6 @@
-#A slack widget
+#A Slack Widget
 
-jsla_slack_widget.png      nomadlist_slack_widget.png
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "NomadList chat Widget")
-
-
-
-
+```bash
+   python -m SimpleHTTPServer
+   Serving HTTP on 0.0.0.0 port 8000 ...
+````
